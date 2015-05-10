@@ -1,0 +1,127 @@
+\title{Tools of the Trade}
+\subtitle{A lab on the practicalities of security}
+
+\author{%
+  Daniel Bosk
+}
+\institute{%
+  Department of Information and Communication Systems\\
+  Mid Sweden University, SE-851\,70 Sundsvall
+}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+The main purpose of security is that it should be used in applications and 
+systems produced.
+This laboratory assignment focuses on the practical parts of security.
+You have probably read a lot about different cryptographic mechanisms, e.g.~AES 
+\cite{aes} and CBC \cite{blockmodes}; intrusion detection systems of different 
+kinds, e.g.~network \cite{snort} and host-based \cite{ossec} intrusion 
+detection systems.
+You might know that you should use huge prime numbers in RSA \cite{rsa}, but 
+how do you actually choose these in practice?
+In this lab you are supposed to answer questions such as this and get to know 
+some implementations of what you previously only knew in theory.
+
+\subsection{Scope and Aim}
+\label{sec:aim}
+The main idea of the assignment is that the participants choose different 
+practical issues, find solutions to them, and finally present them for the 
+class.
+This way everyone will get knowledge of a variety of practical problems facing 
+developers.
+
+The intended learning outcomes are as follows, after completion of this 
+assignment you will:
+\begin{itemize}
+    \input{aims.tex}
+\end{itemize}
+
+The next section covers what you must read before you understand this 
+assignment and how to do the work.
+Section \ref{sec:tasks} covers the work to be done, i.e.~how you should learn 
+this.
+Section \ref{sec:exam} covers how it will be examined, i.e.~how you show that 
+you have fulfilled the intended learning outcomes given above.
+
+
+\section{Theory}
+\label{sec:theory}
+\input{literature.tex}
+
+
+\section{Assignment}
+\label{sec:tasks}
+Now, you should come up with a question related to practice which you would 
+like to have an answer for.
+There are a lot of questions of this type, for example:
+\begin{itemize}
+  \item How do you choose the RSA prime factors when generating a key?
+
+  \item In a Diffie-Hellman key exchange you need a generator for a group, how 
+    do you find this one?
+
+  \item There is no randomness in a computer program---since these are fully 
+    deterministic---but how do we then get randomness to do cryptography using 
+    a computer?
+
+  \item How do you actually use SHA-256 \cite{shs} or bcrypt \cite{bcrypt} to 
+    protect a password: how should you use them, what values should you use?
+
+  \item What features are actually available in an intrusion detection system, 
+    and how do you use one?
+
+\end{itemize}
+These are just examples, feel free to pick other questions.
+Please discuss possible questions with the course tutor.
+Remember: the questions must be oriented towards solving problems in practice.
+Once you have settled for a question, post it in the course forum.
+This way no one else will try to find the answer to the same question.
+
+Now you will go find the answer of the question.
+Since this is a problem about practice, this means someone has already solved 
+the problem.
+Thus, a good place to look is probably in a related implementation, especially 
+in its documentation.
+Here you can see how someone solved this problem, you can see references to 
+standards documenting how to do it---which is a preferable source for 
+information.
+
+When you have solved the problem, you should prepare a presentation for the 
+class.
+This presentation should contain at least the following:
+\begin{itemize}
+  \item What the question is.
+  \item Why this is an interesting question.
+  \item What the answer to the question is.
+  \item What you have to support your claims (preferably references to 
+    standards, RFCs and software library documentation).
+  \item A short usage example (i.e.~a demo program).
+\end{itemize}
+
+
+\section{Examination}
+\label{sec:exam}
+As you will prepare a presentation, this will be presented for the class (check 
+the course schedule for the date of this presentation).
+You are required to have some slides to make your presentation more 
+comprehensible.
+Your presentation should be at most 15 minutes long, and it must have some 
+technical depth---in particular, you must motivate your findings.
+After the presentation, you must make your presentation available for others 
+for future reference.
+
+
+\subsubsection*{Acknowledgements}
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 
+Unported license.
+To view a copy of this license, visit 
+\url{http://creativecommons.org/licenses/by-sa/3.0/}.
+You can find the original source code in 
+\url{https://github.com/dbosk/toolslab/}.
+
+
+\printbibliography
