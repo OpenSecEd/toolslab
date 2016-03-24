@@ -1,4 +1,4 @@
-\title{Tools of the Trade}
+\title{Lab: Tools of the Trade}
 \subtitle{A lab on the practicalities of security}
 
 \author{%
@@ -17,10 +17,10 @@ The main purpose of security is that it should be used in applications and
 systems produced.
 This laboratory assignment focuses on the practical parts of security.
 You have probably read a lot about different cryptographic mechanisms, e.g.~AES 
-\cite{aes} and CBC \cite{blockmodes}; intrusion detection systems of different 
-kinds, e.g.~network \cite{snort} and host-based \cite{ossec} intrusion 
+\cite{aes} and CBC~\cite{blockmodes}; intrusion detection systems of different 
+kinds, e.g.\ network~\cite{snort} and host-based~\cite{ossec} intrusion 
 detection systems.
-You might know that you should use huge prime numbers in RSA \cite{rsa}, but 
+You might know that you should use huge prime numbers in RSA~\cite{rsa}, but 
 how do you actually choose these in practice?
 In this lab you are supposed to answer questions such as this and get to know 
 some implementations of what you previously only knew in theory.
@@ -41,10 +41,9 @@ assignment you will:
 
 The next section covers what you must read before you understand this 
 assignment and how to do the work.
-Section \ref{sec:tasks} covers the work to be done, i.e.~how you should learn 
-this.
-Section \ref{sec:exam} covers how it will be examined, i.e.~how you show that 
-you have fulfilled the intended learning outcomes given above.
+\Cref{sec:tasks} covers the work to be done, i.e.~how you should learn this.
+\Cref{sec:exam} covers how it will be examined, i.e.~how you show that you have 
+fulfilled the intended learning outcomes given above.
 
 
 \section{Theory}
@@ -63,11 +62,11 @@ There are a lot of questions of this type, for example:
   \item In a Diffie-Hellman key exchange you need a generator for a group, how 
     do you find this one?
 
-  \item There is no randomness in a computer program---since these are fully 
-    deterministic---but how do we then get randomness to do cryptography using 
-    a computer?
+  \item There is no randomness in a computer program --- since these are fully 
+    deterministic --- but how do we then get randomness to do cryptography 
+    using a computer?
 
-  \item How do you actually use SHA-256 \cite{shs} or bcrypt \cite{bcrypt} to 
+  \item How do you actually use SHA-256~\cite{shs} or bcrypt~\cite{bcrypt} to 
     protect a password: how should you use them, what values should you use?
 
   \item What features are actually available in an intrusion detection system, 
@@ -124,4 +123,4 @@ You can find the original source code in
 \url{https://github.com/dbosk/toolslab/}.
 
 
-\printbibliography
+\printbibliography{}
