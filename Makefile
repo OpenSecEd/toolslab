@@ -3,7 +3,7 @@ all: tools.pdf
 
 FILES= 		tools.tex aims.tex literature.tex tools.bib
 
-tools.pdf: ${FILES} llncs
+tools.pdf: ${FILES}
 
 
 INCLUDE_MAKEFILES=makefiles
