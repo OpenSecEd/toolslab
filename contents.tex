@@ -11,21 +11,19 @@
 
 \maketitle
 
-\section{Introduction}
+\section{Introduction}%
 \label{sec:intro}
 The main purpose of security is that it should be used in applications and 
 systems produced.
 This laboratory assignment focuses on the practical parts of security.
-You have probably read a lot about different cryptographic mechanisms, e.g.~AES 
-\cite{aes} and CBC~\cite{blockmodes}; intrusion detection systems of different 
-kinds, e.g.\ network~\cite{snort} and host-based~\cite{ossec} intrusion 
-detection systems.
-You might know that you should use huge prime numbers in RSA~\cite{rsa}, but 
-how do you actually choose these in practice?
+You have probably read a lot about different cryptographic mechanisms, 
+e.g.~AES~\cite{aes} and CBC~\cite{blockmodes}.
+You know that you should use huge prime numbers in RSA~\cite{rsa}, but how do 
+you actually choose these in practice?
 In this lab you are supposed to answer questions such as this and get to know 
 some implementations of what you previously only knew in theory.
 
-\subsection{Scope and Aim}
+\subsection{Scope and Aim}%
 \label{sec:aim}
 The main idea of the assignment is that the participants choose different 
 practical issues, find solutions to them, and finally present them for the 
@@ -34,7 +32,7 @@ This way everyone will get knowledge of a variety of practical problems facing
 developers.
 
 The intended learning outcomes are as follows, after completion of this 
-assignment you will:
+assignment you will be able to:
 \begin{itemize}
     \input{aims.tex}
 \end{itemize}
@@ -46,21 +44,21 @@ assignment and how to do the work.
 fulfilled the intended learning outcomes given above.
 
 
-\section{Theory}
+\section{Theory}%
 \label{sec:theory}
 \input{literature.tex}
 
 
-\section{Assignment}
+\section{Assignment}%
 \label{sec:tasks}
 Now, you should come up with a question related to practice which you would 
 like to have an answer for.
 There are a lot of questions of this type, for example:
 \begin{itemize}
-  \item How do you choose the RSA prime factors when generating a key?
-
   \item In a Diffie-Hellman key exchange you need a generator for a group, how 
     do you find this one?
+
+  \item How do you choose the RSA prime factors when generating a key?
 
   \item There is no randomness in a computer program --- since these are fully 
     deterministic --- but how do we then get randomness to do cryptography 
@@ -69,9 +67,8 @@ There are a lot of questions of this type, for example:
   \item How do you actually use SHA-256~\cite{shs} or bcrypt~\cite{bcrypt} to 
     protect a password: how should you use them, what values should you use?
 
-  \item What features are actually available in an intrusion detection system, 
-    and how do you use one?
-
+  \item How do you use anonymous credentials (Identity Mixer) on HyperLedger 
+    Fabric?
 \end{itemize}
 These are just examples, feel free to pick other questions.
 Please discuss possible questions with the course tutor.
@@ -85,7 +82,7 @@ the problem.
 Thus, a good place to look is probably in a related implementation, especially 
 in its documentation.
 Here you can see how someone solved this problem, you can see references to 
-standards documenting how to do it---which is a preferable source for 
+standards documenting how to do it --- which is a preferable source for 
 information.
 
 When you have solved the problem, you should prepare a presentation for the 
@@ -101,14 +98,14 @@ This presentation should contain at least the following:
 \end{itemize}
 
 
-\section{Examination}
+\section{Examination}%
 \label{sec:exam}
 As you will prepare a presentation, this will be presented for the class (check 
 the course schedule for the date of this presentation).
 You are required to have some slides to make your presentation more 
 comprehensible.
 Your presentation should be at most 15 minutes long, and it must have some 
-technical depth---in particular, you must motivate your findings.
+technical depth --- in particular, you must motivate your findings.
 After the presentation, you must make your presentation available for others 
 for future reference.
 

@@ -1,7 +1,7 @@
 .PHONY: all
 all: tools.pdf
 
-FILES= 		tools.tex aims.tex literature.tex tools.bib
+FILES= 		tools.tex aims.tex literature.tex tools.bib contents.tex
 
 tools.pdf: ${FILES}
 
